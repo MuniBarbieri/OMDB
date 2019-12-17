@@ -1,0 +1,8 @@
+@media (min-width: 960px) {
+  #card .col-md-3 .well {
+    height: 390px;
+  }
+  #card .col-md-3 .img {
+    height: 240px;
+  }
+}
