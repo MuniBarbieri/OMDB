@@ -23,13 +23,16 @@ export const usuariosLogOutProcess = () => dispatch =>
     .then(res => res.data)
     .then(() => dispatch(usuariosLogout()));
 
-export const fetchUsers = () => dispatch =>
+export const fetchUsers = () => dispatch => {
+
   axios
     .get("/api/users")
     .then(res => res.data)
     .then(users => {
-      dispatch(receiveUsers(users));
+      dispatch(usuariosLogin(users));
     })
     .catch(err => {
       throw err;
     });
+}
+

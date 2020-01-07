@@ -33,10 +33,10 @@ function FavoritesMovies({ favorites, userData, handleClick }) {
                   </p>
 
                   <div>
-                    {" "}
+
                     <Link
-                      to={`/movies/${favorites.imdbID}`}
-                      onClick={() => handleClick(favorites.imdbID)}
+                      to={`/movies/${favorites.data.imdbID}`}
+                      onClick={() => handleClick(favorites.data.imdbID)}
                     >
                       Know more!
                     </Link>

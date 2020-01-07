@@ -14,6 +14,7 @@ class FavoritesMoviesContainer extends Component {
 
   handleClick(id) {
     this.props.fetchMovieData(id);
+
   }
 
   handleRemove(id) {
@@ -26,7 +27,10 @@ class FavoritesMoviesContainer extends Component {
       <div className="jumbotron jumbotron-fluid">
         <div className="container">
           <h1 className="display-4">My Favorites Movies</h1>
-          <p className="lead">These are my bests</p>
+          {
+            this.props.favorites.length ? <p className="lead">These are my bests</p> : <p className="lead">No favorites added</p>
+          }
+
         </div>
         <FavoritesMovies
           favorites={this.props.favorites}

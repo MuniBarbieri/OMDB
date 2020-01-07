@@ -51,7 +51,7 @@ function SingleMovieData({ movieData }) {
               View on IMDB
             </a>
             <Link to="/" className="btn btn-default text-light">
-              Go Back To Search
+              Home
             </Link>
           </div>
         </div>

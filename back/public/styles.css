@@ -1,0 +1,35 @@
+.card {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(72, 72, 78);
+    color: white;
+    text-align: center;
+  }
+
+  .img {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(72, 72, 78);
+    color: white;
+    text-align: center;
+  }
+
+  .addFav {
+    background-color: rgb(24, 187, 24);
+    border-radius: 5px;
+  }
+
+  .addFav:hover {
+    color:white;
+  
+  }
+
+  .card-text {
+    color: white;
+  }
+
+  .card-title {
+    color: white;
+  }
